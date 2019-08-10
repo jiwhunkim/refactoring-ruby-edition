@@ -8,3 +8,4 @@ Read commit log
 ----
 
 - [chapter01 - Refactoring, a First Example](https://github.com/jiwhunkim/refactoring-ruby-edition/commits/chapter01)
+- [chapter02 - Principles in Refactoring](https://github.com/jiwhunkim/refactoring-ruby-edition/commits/chapter02)
