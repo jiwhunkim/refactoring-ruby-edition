@@ -15,4 +15,10 @@ class RunFileTest < Test::Unit::TestCase
     contents = File.read('datas.txt')
     assert_equal '2', contents[3, 1]
   end
+
+  def test_read_with_a_length_specified
+    contents = File.read('data.txt', 11)
+    assert_equal 'Bradman 99.', contents
+  end
+
 end
