@@ -2,15 +2,8 @@ class ExampleReassigningALocalVariable
   attr_reader :orders
 
   def print_owing
-    outstanding = 0.0
-
     print_banner
-
-    # calculate outstanding
-    @orders.each do |order|
-      outstanding += order.amount
-    end
-
+    outstanding = calculate_outstanding
     print_details(outstanding)
   end
 
@@ -25,5 +18,14 @@ class ExampleReassigningALocalVariable
     # print details
     puts "name: #{@name}"
     puts "amount: #{outstanding}"
+  end
+
+  def calculate_outstanding
+    outstanding = 0.0
+    # calculate outstanding
+    @orders.each do |order|
+      outstanding += order.amount
+    end
+    outstanding
   end
 end
