@@ -11,9 +11,7 @@ class ExampleUsingLocalVariables
       outstanding += order.amount
     end
 
-    # print details
-    puts "name: #{@name}"
-    puts "amount: #{outstanding}"
+    print_details(outstanding)
   end
 
   def print_banner
@@ -21,5 +19,11 @@ class ExampleUsingLocalVariables
     puts "*************************"
     puts "***** Customer Owes *****"
     puts "*************************"
+  end
+
+  def print_details(outstanding)
+    # print details
+    puts "name: #{@name}"
+    puts "amount: #{outstanding}"
   end
 end
