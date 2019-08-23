@@ -9,10 +9,10 @@ class ExampleReplaceTempWithChainSelect
     @options ||= []
   end
 
-  def add_option(arg)
+  def and(arg)
     options << arg
     self
   end
 end
 
-select = ExampleReplaceTempWithChainSelect.with_option(1999).add_option(2000).add_option(2001).add_option(2002)
+select = ExampleReplaceTempWithChainSelect.with_option(1999).and(2000).and(2001).and(2002)
