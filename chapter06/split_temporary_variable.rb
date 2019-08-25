@@ -1,8 +1,8 @@
 class SplitTemporaryVariable
   def temporary_variable_assigned
-    temp = 2 * (@height + @width)
-    puts temp
-    temp = @height * @width
-    puts temp
+    perimeter = 2 * (@height + @width)
+    puts perimeter
+    area = @height * @width
+    puts area
   end
 end
