@@ -8,4 +8,12 @@ class ExampleReplaceLoopWithCollectionClosureMethod
     offices = employees.collect {|e| e.office}
     offices
   end
+
+  def manager_office
+    manager_offices = []
+    employees.each do |e|
+      manager_offices << e.office if e.manager?
+    end
+    manager_offices
+  end
 end
