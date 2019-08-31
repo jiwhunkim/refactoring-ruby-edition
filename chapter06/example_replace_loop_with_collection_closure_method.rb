@@ -15,8 +15,6 @@ class ExampleReplaceLoopWithCollectionClosureMethod
   end
 
   def total_salary
-    total = 0
-    employees.each { |e| total += e.salary }
-    total
+    employees.inject(0) { |sum, e| sum += e.salary }
   end
 end
