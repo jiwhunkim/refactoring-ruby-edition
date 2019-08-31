@@ -13,4 +13,10 @@ class ExampleReplaceLoopWithCollectionClosureMethod
     manager_offices = employees.select { |e| e.manager? }.collect { |e| e.office }
     manager_offices
   end
+
+  def total_salary
+    total = 0
+    employees.each { |e| total += e.salary }
+    total
+  end
 end
