@@ -5,8 +5,7 @@ class ExampleReplaceLoopWithCollectionClosureMethod
   end
 
   def employee_offices
-    offices = []
-    employees.each {|e| offices << e.office}
+    offices = employees.collect {|e| e.office}
     offices
   end
 end
