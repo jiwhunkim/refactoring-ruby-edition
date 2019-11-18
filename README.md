@@ -12,4 +12,5 @@ Read commit log
 - [chapter03 - Bad Smells in Code](https://github.com/jiwhunkim/refactoring-ruby-edition/commits/chapter03)
 - [chapter04 - Building Tests](https://github.com/jiwhunkim/refactoring-ruby-edition/commits/chapter04)
 - [chapter05 - Toward a Catalog of Refactorings](https://github.com/jiwhunkim/refactoring-ruby-edition/commits/chapter05)
+- [chapter06 - Composing Methods](https://github.com/jiwhunkim/refactoring-ruby-edition/commits/chapter06)
 
